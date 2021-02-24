@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  /* ::-webkit-scrollbar {
+   display: none;
+       }
+       */
+   *{
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+   }
+   #ubicaciones{
+     opacity: 1;
+     transition: width 2s;
+
+   }
+</style>
+
+</head>
+<body class="multiple-scenes ">
+
+
+  <div id="imagen" style="position: absolute;z-index: 3;background-color: white;">
+    <img src="360LimaPortada2.jpg" alt="" style="width: 100%;height: 99.51vh;">
+
+  </div>
+  
+<div id="ubicaciones" style="width: 100%;height: 100vh; display: flex;flex-direction: column;">
+<div style="width: 100%;height: 3.8vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.9vh;background: rgb(240, 200, 200);z-index: 4;opacity: 0;display: flex;flex-direction: row;">
+<div style="width: 40.5%;background-color: black;"></div>
+<div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+  <a href="javascript:void(0)" class="scene" data-id="0-frontis-del-auditorio-agustn-alva-y-alva" style="padding-right: 100%;padding-bottom: 60% ;">
+  </a> 
+</div>
+<div style="width: 2.8%;background-color: black;"></div>
+<div style="width: 1.9%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+
+  <a href="javascript:void(0)" class="scene" data-id="4-frontis-del-comedor-universitario" style="padding-right: 100%;padding-bottom: 60% ;"> 
+  </a>
+
+</div>
+
+</div>
+<!--2-->
+<div style="width: 100%;height: 2vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.1vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 43.8%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="16-parque-de-la-amistad-" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<div style="width: 100%;height: 1vh;z-index: 3;"></div>
+<div style="width: 100%;height: 1.3vh;z-index: 3;"></div>
+
+<div style="width: 100%;height: 4.3vh;z-index: 3;"></div>
+<div style="width: 100%;height: 2.4vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 44.3%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="11-rotonda" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<!--4-->
+<div style="width: 100%;height: 3.4vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 38.5%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="2-laboratorio-de-simulacin-clnica-" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="9-exteriores-pabelln-a-pabelln-b" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<!--6-->
+
+<div style="width: 100%;height: 1.8vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.3vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 39.5%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="12-monumento-de-la-educacin-adventista" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+  
+</div>
+<div style="width: 100%;height: 3.3vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 42%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="7-exteriores-pabelln-c" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<!--8-->
+
+<div style="width: 100%;height: 2vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.5vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 34.8%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="10-alameda-pabelln-d" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<div style="width: 100%;height: 1.6vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.6vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 39.2%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="1-auditorio-jn-andrews" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+  <!--10-->
+
+  <div style="width: 2.4%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="14-teatrn-upeu" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+
+</div>
+<div style="width: 100%;height: 9vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.6vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 48.8%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="13-anfiteatro-talleres-para-la-vida" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+  <!--12-->
+
+<div style="width: 100%;height: 2.2vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.6vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 54%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="5-alameda-fia" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+<div style="width: 100%;height: 11.7vh;z-index: 3;"></div>
+<div style="width: 100%;height: 4.5vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 61.4%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="15-frontis-del-templo-villa-unin" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+    <!--14-->
+
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="6-hall-templo-villa-unin" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+  
+  <div style="width: 13.6%;background-color: black;"></div>
+  <div  style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="3-frontis-del-colegio-unin" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+
+
+
+
+    <!--Se puso 2 filas de click al 16 para evitar problemas-->
+    <!--16-->
+
+<div style="width: 100%;height: 3.6vh;z-index: 3;"></div>
+<div style="width: 100%;height: 3.7vh;background: rgb(240, 200, 200);z-index: 3;opacity: 0;display: flex;flex-direction: row;">
+  <div style="width: 98%;background-color: black;"></div>
+  <div style="width: 2%;background-color: rgb(189, 14, 14);" onclick="cambiarEscena()">
+    <a href="javascript:void(0)" class="scene" data-id="8-mansin-upeu" style="padding-right: 100%;padding-bottom: 60% ;">
+    </a> 
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="pano"></div>
+<a id="1" href="javascript:void(0)" class="scene" data-id="0-frontis-del-auditorio-agustn-alva-y-alva" style="display: none;">
+</a>
+<div id="sceneList" >
+  <ul class="scenes" >
+    
+      <a  href="javascript:void(0)" class="scene" data-id="0-frontis-del-auditorio-agustn-alva-y-alva">
+        <li class="text">Frontis del Auditorio Agustín Alva y Alva</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-auditorio-jn-andrews">
+        <li class="text">Auditorio JN. Andrews</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-laboratorio-de-simulacin-clnica-">
+        <li class="text">Laboratorio de simulación clínica </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-frontis-del-colegio-unin">
+        <li class="text">Frontis del Colegio Unión</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-frontis-del-comedor-universitario">
+        <li class="text">Frontis del Comedor universitario</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-alameda-fia">
+        <li class="text">Alameda FIA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-hall-templo-villa-unin">
+        <li class="text">Hall templo Villa Unión</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-exteriores-pabelln-c">
+        <li class="text">Exteriores pabellón C</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-mansin-upeu">
+        <li class="text">Mansión UpeU</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-exteriores-pabelln-a-pabelln-b">
+        <li class="text">Exteriores pabellón A, pabellón B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-alameda-pabelln-d">
+        <li class="text">Alameda Pabellón D</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-rotonda">
+        <li class="text">Rotonda</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-monumento-de-la-educacin-adventista">
+        <li class="text">Monumento de la Educación Adventista</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-anfiteatro-talleres-para-la-vida">
+        <li class="text">Anfiteatro Talleres para la Vida</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-teatrn-upeu">
+        <li class="text">Teatrín UPeU</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-frontis-del-templo-villa-unin">
+        <li class="text">Frontis del templo Villa Unión</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-parque-de-la-amistad-">
+        <li class="text">Parque de la amistad </li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+
+
+  function cambiarEscena(){
+   // alert("llega");
+   // document.getElementById( 'ubicaciones' ).style.display = 'none';
+   var element = document.getElementById('ubicaciones');
+    element.style.opacity = "0";
+
+    var element2 = document.getElementById('imagen');
+    element2.style.opacity = "0";
+    
+   document.getElementById( 'ubicaciones' ).style.display = 'none';
+   document.getElementById( 'imagen' ).style.display = 'none';
+
+
+  }
+  
+
+</script>
+</body>
+</html>
